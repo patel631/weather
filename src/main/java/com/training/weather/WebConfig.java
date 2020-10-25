@@ -13,7 +13,6 @@ public class WebConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**")
-		.allowedMethods("PUT", "DELETE", "POST", "GET", "OPTIONS");
+		registry.addMapping("/**").allowedMethods("PUT", "DELETE", "POST", "GET", "OPTIONS");
 	}
 }
